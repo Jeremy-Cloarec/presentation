@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <meta name="description"
+        content="Passionné par le développement, j’ai réalisé divers projets de la conception à l’intégration puis au déploiement. Je m’intéresse particulièrement à l’environnement JS.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Node.js, Express, Développeur web">
+    <meta name="author" content="Jérémy Cloarec">
+    <title>Jérémy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, sans-serif;
+            color: rgb(43, 41, 41);
+            background: #ecedee;
+            --violet : rgb(155, 11, 124);
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+            padding: 2rem 8% 1%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--violet);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            box-shadow: inset 0 0 0 0 var(--violet);
+            margin: 0 -.25rem;
+            padding: 0 .25rem;
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            color: var(--violet);
+
+            &:hover {
+                box-shadow: inset 100px 0 0 0 var(--violet);
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Hello !</h1>
+        <p>Je suis Jérémy, développeur web passionné par l'environnement JS.</p>
+        <p>Pour voir mes projets, je vous invite à parcourir mon profil GitHub en cliquant sur ce <a
+                href="https://github.com/Jeremy-Cloarec" target="_blank">lien</a>.
+        </p>
+        <p>Vous pouvez également vous connecter à mon profil <a href="https://www.linkedin.com/in/jy-cloarec/"
+                target="_blank">LinkedIn</a>.</p>
+        </p>
+        <p>Merci à vous 😊</p>
+    </main>
+    <footer>
+        <p><span id="date"></span>, Jérémy Cloarec</p>
+    </footer>
+    <script>
+        document.getElementById('date').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
