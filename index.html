@@ -20,14 +20,15 @@
         html {
             font-family: Arial, sans-serif;
             color: rgb(43, 41, 41);
-            background: #ecedee;
             --violet : rgb(155, 11, 124);
+            --white: #fafafb;
+            background: var(--white);
         }
 
         body {
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100dvh;
             justify-content: space-between;
             padding: 2rem 8% 1%;
         }
@@ -53,7 +54,7 @@
 
             &:hover {
                 box-shadow: inset 100px 0 0 0 var(--violet);
-                color: white;
+                color: var(--white);
             }
         }
     </style>
@@ -72,7 +73,7 @@
         <p>Merci à vous 😊</p>
     </main>
     <footer>
-        <p><span id="date"></span>, Jérémy Cloarec</p>
+        <p><span id="date"></span> - Jérémy Cloarec</p>
     </footer>
     <script>
         document.getElementById('date').textContent = new Date().getFullYear();
